@@ -21,7 +21,7 @@ exports.createPages = async ({graphql, actions}) => {
     result.data.allContentfulBlogPost.nodes.forEach((data) => {
         createPage({
         path: `/blogs/${data.title}`,
-        component: path.resolve('./src/template/template.tsx'),
+        component: path.resolve('./src/Template/Template.tsx'),
         context: {
             data: data
         }

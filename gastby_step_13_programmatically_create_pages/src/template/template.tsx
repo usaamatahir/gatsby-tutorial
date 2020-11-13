@@ -1,7 +1,7 @@
 import React from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
-const template = ({ pageContext: { data } }: any) => {
+const Template = ({ pageContext: { data } }: any) => {
   console.log(data);
   return (
     <div>
@@ -12,4 +12,4 @@ const template = ({ pageContext: { data } }: any) => {
   );
 };
 
-export default template;
+export default Template;
